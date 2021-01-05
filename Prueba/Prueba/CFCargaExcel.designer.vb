@@ -34,6 +34,7 @@ Partial Class CFCargaExcel
         Me.txtRutaXLS = New System.Windows.Forms.TextBox()
         Me.BuscarArchivo = New System.Windows.Forms.OpenFileDialog()
         Me.BCargar = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.DGExcel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -136,11 +137,21 @@ Partial Class CFCargaExcel
         Me.BCargar.Text = "Cargar listado"
         Me.BCargar.UseVisualStyleBackColor = True
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(161, 258)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Label5"
+        '
         'CFCargaExcel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1038, 577)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BCargar)
         Me.Controls.Add(Me.txtRutaXLS)
         Me.Controls.Add(Me.BCargarExcel)
@@ -172,4 +183,5 @@ Partial Class CFCargaExcel
     Friend WithEvents txtRutaXLS As TextBox
     Friend WithEvents BuscarArchivo As OpenFileDialog
     Friend WithEvents BCargar As Button
+    Friend WithEvents Label5 As Label
 End Class
